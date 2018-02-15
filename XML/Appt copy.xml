@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Appointments>
+  <Appointment>
+    <Title>Demo Meeting</Title>
+    <Description>Informal Agenda</Description>
+    <Date>07/01/2016</Date>
+    <Time>11:00 am</Time>
+    <Type>Meeting</Type>
+    <WorkRelated>1</WorkRelated>
+  </Appointment>
+  <Appointment Title="test" Description="description" Date="2017-11-04T01:12:59.318734-04:00" Time="01:12:59 AM" Type="Reminder" WorkRelated="true" />
+  <Appointment Title="test1" Description="description1" Date="2017-11-04T01:15:01.750255-04:00" Time="01:15:01 AM" Type="Reminder1" WorkRelated="true" />
+</Appointments>

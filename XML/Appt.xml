@@ -1,0 +1,26 @@
+<Appointments>
+  <Appointment>
+    <Title>Demo Meeting</Title>
+    <Description>Informal Agenda</Description>
+    <Date>2016-07-01</Date>
+    <Time>11:00</Time>
+    <Type>Meeting</Type>
+    <WorkRelated>true</WorkRelated>
+  </Appointment>
+  <Appointment>
+    <Title>Test2</Title>
+    <Description>test2</Description>
+    <Date>2017-11-14</Date>
+    <Time>01:00</Time>
+    <Type>Meeting</Type>
+    <WorkRelated>true</WorkRelated>
+  </Appointment>
+  <Appointment>
+    <Title>Test3</Title>
+    <Description>test31</Description>
+    <Date>2017-01-01</Date>
+    <Time>01:00</Time>
+    <Type>Appointment</Type>
+    <WorkRelated>false</WorkRelated>
+  </Appointment>
+</Appointments>

@@ -1,0 +1,100 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Scheduler</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="~/Scripts/Appointments.js"></script>
+
+</head>
+	
+<body style="margin:15px;">
+		
+    <div class="page-header">
+        <h1>Welcome <small>to Lizbet Mendoza's Appointments scheduler</small></h1>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="row centered-form">
+            <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Enter/Edit an Appointement</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" name="title" id="title" class="form-control input-sm" placeholder="Title" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="description" id="description" class="form-control input-sm" placeholder="Description">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <input type="date" name="date" id="date" class="form-control input-sm" placeholder="mm/dd/yyyy" required>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <input type="time" name="time" id="time" class="form-control input-sm" placeholder="Time" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <select name="type" id="type" required>
+                                            <option value="appointment">Appointment</option>
+                                            <option value="meeting">Meeting</option>
+                                            <option value="reminder">Reminder</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label><input id="workrelated" type="checkbox">&nbsp;Work Related</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div>
+                                        <button id="save" class="btn btn-success btn-md">Save</button>
+                                        <button id="cancel" class="btn btn-warning btn-md">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Appointment's List</h3>
+    <table id="dataGrid" class="table table-striped bordered"></table>
+
+    <script>
+
+        $(document).ready(function () {
+            appointments.init();
+        });
+
+    </script>
+		
+</body>
+	
+</html>
+
